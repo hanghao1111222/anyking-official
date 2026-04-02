@@ -15,7 +15,7 @@ export default function HomePage() {
       name: 'Dual Screen Extender',
       subtitle: '14" FHD 1080P',
       price: '$196.99',
-      originalPrice: '$359.99',
+      originalPrice: '$393.99',
       discount: '-50%',
       rating: 5,
       reviews: 44,
@@ -331,20 +331,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-12 px-4 sm:px-6 lg:px-8 border-t border-gray-200 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="flex items-center gap-2">
-              <Monitor className="w-6 h-6 text-gray-700" />
-              <span className="font-bold text-gray-900">Anyking</span>
-            </div>
-            <p className="text-gray-600 text-sm">
-              © 2024 Anyking. All rights reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
+

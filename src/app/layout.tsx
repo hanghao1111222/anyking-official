@@ -1,6 +1,10 @@
 import type { Metadata } from 'next';
 import { Inspector } from 'react-dev-inspector';
+import Footer from '@/components/Footer';
+import { CartProvider } from '@/context/CartContext';
 import './globals.css';
+
+
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.anyking.official.com'),
@@ -68,8 +72,13 @@ export default function RootLayout({
     <html lang="en">
       <body className={`antialiased`}>
         {isDev && <Inspector />}
-        {children}
+        <CartProvider>
+          {children}
+          <Footer />
+        </CartProvider>
       </body>
+
+
     </html>
   );
 }

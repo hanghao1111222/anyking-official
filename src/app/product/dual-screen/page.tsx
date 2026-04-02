@@ -3,7 +3,10 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import { useRouter } from 'next/navigation';
+import { useCart } from '@/context/CartContext';
 import { Input } from '@/components/ui/input';
+
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { 
@@ -47,7 +50,7 @@ interface ProductInfo {
 const defaultProduct: ProductInfo = {
   name: 'Laptop Screen Extender, 14" FHD 1080P Portable Monitor for Laptop with 100% sRGB',
   price: '$196.99',
-  originalPrice: '$359.99',
+  originalPrice: '$393.99',
   discount: '-50%',
   description: 'Dual Screen Extender for Laptop 13–17.3". Plug & Play External Monitor with 14-inch FHD 1080P IPS Display, 100% sRGB color accuracy. Perfect for Business Travel & Home Office, Software Developers, Data Analysts, Stock Traders.',
   features: [
@@ -99,6 +102,33 @@ export default function HomePage() {
   const [zoomPosition, setZoomPosition] = useState({ x: 0, y: 0 });
   const [imageRef, setImageRef] = useState<HTMLDivElement | null>(null);
   const [showAllSpecs, setShowAllSpecs] = useState(false);
+  const [quantity, setQuantity] = useState(1);
+  const { addItem } = useCart();
+  const router = useRouter();
+
+  const handleAddToCart = () => {
+    addItem({
+      id: 'dual-screen',
+      name: product.name,
+      price: parseFloat(product.price.replace('$', '')),
+      originalPrice: product.originalPrice ? parseFloat(product.originalPrice.replace('$', '')) : undefined,
+      image: product.images[0],
+      quantity: quantity
+    });
+    router.push('/cart');
+  };
+
+  const handleBuyNow = () => {
+    addItem({
+      id: 'dual-screen',
+      name: product.name,
+      price: parseFloat(product.price.replace('$', '')),
+      originalPrice: product.originalPrice ? parseFloat(product.originalPrice.replace('$', '')) : undefined,
+      image: product.images[0],
+      quantity: quantity
+    });
+    router.push('/checkout');
+  };
 
   const fetchUrlContent = async () => {
     if (!url) return;
@@ -193,10 +223,13 @@ export default function HomePage() {
               <a href="#features" className="text-gray-600 hover:text-gray-900 transition-colors text-sm font-medium">Features</a>
               <a href="#specs" className="text-gray-600 hover:text-gray-900 transition-colors text-sm font-medium">Specifications</a>
               <a href="#reviews" className="text-gray-600 hover:text-gray-900 transition-colors text-sm font-medium">Reviews</a>
-              <Button className="bg-gray-900 hover:bg-gray-800 text-white text-sm">
-                Sign In
-              </Button>
+              <Link href="/signin">
+                <Button className="bg-gray-900 hover:bg-gray-800 text-white text-sm">
+                  Sign In
+                </Button>
+              </Link>
             </div>
+
 
             {/* Mobile Menu Button */}
             <button 
@@ -409,33 +442,23 @@ export default function HomePage() {
 
               {/* CTA Buttons */}
               <div className="space-y-3 pt-4">
-                <a 
-                  href="https://www.amazon.com/dp/B0GJS4XGDJ" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="block"
+                <Button 
+                  onClick={handleBuyNow}
+                  className="w-full bg-gray-900 hover:bg-gray-800 text-white text-lg py-6 h-auto font-semibold"
                 >
-                  <Button 
-                    className="w-full bg-gray-900 hover:bg-gray-800 text-white text-lg py-6 h-auto font-semibold"
-                  >
-                    Buy now
-                  </Button>
-                </a>
-                <a 
-                  href="https://www.amazon.com/dp/B0GJS4XGDJ" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="block"
+                  Buy now
+                </Button>
+                
+                <Button 
+                  onClick={handleAddToCart}
+                  variant="outline" 
+                  className="w-full border-2 border-blue-600 text-blue-600 hover:bg-blue-50 text-lg py-6 h-auto font-semibold"
                 >
-                  <Button 
-                    variant="outline" 
-                    className="w-full border-2 border-blue-600 text-blue-600 hover:bg-blue-50 text-lg py-6 h-auto font-semibold"
-                  >
-                    <ShoppingCart className="w-5 h-5 mr-2" />
-                    Add to cart
-                  </Button>
-                </a>
+                  <ShoppingCart className="w-5 h-5 mr-2" />
+                  Add to cart
+                </Button>
               </div>
+
 
               {/* Trust Icons */}
               <div className="grid grid-cols-4 gap-4 pt-4">
@@ -1036,7 +1059,8 @@ export default function HomePage() {
       </section>
 
       {/* Customer Reviews Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <section id="reviews" className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-3 gap-8">
             {/* Rating Summary */}
@@ -1182,22 +1206,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-12 px-4 sm:px-6 lg:px-8 border-t border-gray-200 bg-gray-900 text-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="flex items-center gap-2">
-              <Link href="/" className="flex items-center gap-2">
-                <Monitor className="w-6 h-6 text-white" />
-                <span className="font-bold">Anyking</span>
-              </Link>
-            </div>
-            <p className="text-gray-400 text-sm">
-              © 2024 Anyking. All rights reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
+
