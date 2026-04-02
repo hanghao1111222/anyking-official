@@ -1,0 +1,204 @@
+{
+  "siteConfig": {
+    "storeName": "Anyking",
+    "supportEmail": "support@anyking.outletsday.com"
+  },
+  "products": [
+    {
+      "slug": "dual-screen",
+      "id": "dual-screen",
+      "name": "Dual Screen Extender",
+      "subtitle": "14\" FHD 1080P Portable Monitor for Laptop with 100% sRGB",
+      "price": "$196.99",
+      "originalPrice": "$393.99",
+      "discount": "-50%",
+      "rating": 4.9,
+      "reviews": "3,842",
+      "soldBadge": "12,450+ SOLD",
+      "viewingNow": 46,
+      "highlightMessage": "14\" FHD 1080P IPS with 100% sRGB, LED Ambient Ring Light, AI Copilot Ready",
+      "description": "Perfect for professionals who need extra screen space for multitasking, code comparison, and productivity boost. Dual Screen Extender for Laptop 13-17.3\". Plug & Play External Monitor with 14-inch FHD 1080P IPS Display, 100% sRGB color accuracy.",
+      "features": [
+        "14\" FHD 1080P Display",
+        "100% sRGB Color Accuracy",
+        "USB-C Plug & Play",
+        "180° Rotation",
+        "1.9 lbs Lightweight",
+        "AI Copilot Ready"
+      ],
+      "specs": {
+        "Screen Size": "14 inches",
+        "Resolution": "1920 x 1080P (FHD)",
+        "Color Gamut": "100% sRGB",
+        "Brightness": "300 nits",
+        "Refresh Rate": "60Hz",
+        "Contrast Ratio": "1000:1",
+        "Panel": "IPS Panel",
+        "Aspect Ratio": "16:9",
+        "Weight": "1.9 lbs",
+        "Rotation": "180° Left & Right",
+        "Tilt Angle": "90° Adjustable",
+        "Fit Laptops": "13-17.3 inches",
+        "Compatibility": "macOS, Windows, Linux, Chrome",
+        "Interface": "USB-C (One-cable solution)",
+        "Eye Care": "Anti-Glare & Low Blue Light",
+        "Cooling": "Rear Hollowed Structure"
+      },
+      "images": {
+        "thumbnail": "/product-1.jpg",
+        "gallery": [
+          "/product-1.jpg",
+          "/product-2.jpg",
+          "/product-3.jpg",
+          "/product-4.jpg",
+          "/product-5.jpg",
+          "/product-6.jpg",
+          "/product-7.jpg",
+          "/product-8.jpg"
+        ],
+        "aplusContent": [
+          "/aplus-1.jpg",
+          "/aplus-2.jpg",
+          "/aplus-3.jpg",
+          "/aplus-4.jpg",
+          "/aplus-5.jpg",
+          "/aplus-8.jpg",
+          "/aplus-9.jpg",
+          "/aplus-10.jpg",
+          "/aplus-11.jpg",
+          "/aplus-12.jpg",
+          "/aplus-14.jpg",
+          "/brand-banner.jpg"
+        ]
+      },
+      "best": "Best for Remote Workers",
+      "amazonUrl": "https://www.amazon.com/dp/B0GJSXHDCG"
+    },
+    {
+      "slug": "triple-screen",
+      "id": "triple-screen",
+      "name": "Triple Screen Extender",
+      "subtitle": "2×14\" FHD 1080P IPS Extension Screens",
+      "price": "$393.99",
+      "originalPrice": "$699.99",
+      "discount": "-44%",
+      "rating": 4.9,
+      "reviews": "2,915",
+      "soldBadge": "12,450+ SOLD",
+      "viewingNow": 49,
+      "highlightMessage": "2×14\" FHD 1080P IPS with 100% sRGB, LED Ambient Ring Light, AI Copilot Ready",
+      "description": "Triple screen setup with 2 extension screens for ultimate productivity. Two 14\" FHD 1080P IPS displays with 100% sRGB, perfect for multitasking, coding, gaming, and professional work.",
+      "features": [
+        "2×14\" FHD 1080P IPS Extension Screens",
+        "Total 3 Displays (Laptop + 2 Extensions)",
+        "100% sRGB Color Accuracy",
+        "Anti-Glare & Low Blue Light",
+        "USB-C Plug & Play",
+        "Extended, Mirrored, Portrait Modes"
+      ],
+      "specs": {
+        "Extension Screens": "2×14 Inches",
+        "Total Displays": "3 (Laptop + 2 Extension Screens)",
+        "Resolution": "1920 x 1080P (FHD) × 2",
+        "Color Gamut": "100% sRGB",
+        "Brightness": "300 nits",
+        "Refresh Rate": "60Hz",
+        "Contrast Ratio": "1000:1",
+        "Panel": "IPS Panel",
+        "Aspect Ratio": "16:9",
+        "Screen Surface": "Matte (Anti-Glare)",
+        "Weight": "3.5 lbs",
+        "Rotation": "Adjustable Viewing Angles",
+        "Fit Laptops": "13-17.3 inches",
+        "Compatibility": "macOS, Windows, Linux, Chrome",
+        "Interface": "USB-C (Plug & Play)",
+        "Eye Care": "Anti-Glare & Low Blue Light",
+        "Modes": "Extended, Mirrored, Portrait"
+      },
+      "images": {
+        "thumbnail": "/triple-1.jpg",
+        "gallery": [
+          "/triple-1.jpg",
+          "/triple-1-1.jpg",
+          "/triple-2.jpg",
+          "/triple-3.jpg",
+          "/triple-4.jpg",
+          "/triple-5.jpg",
+          "/triple-6.jpg",
+          "/triple-7.jpg",
+          "/triple-8.jpg"
+        ],
+        "aplusContent": [
+          "/aplus-1.jpg",
+          "/aplus-2.jpg",
+          "/aplus-3.jpg",
+          "/aplus-4.jpg",
+          "/aplus-5.jpg",
+          "/aplus-8.jpg",
+          "/aplus-9.jpg",
+          "/aplus-10.jpg",
+          "/aplus-11.jpg",
+          "/aplus-12.jpg",
+          "/aplus-14.jpg",
+          "/brand-banner.jpg"
+        ]
+      },
+      "best": "Best for Power Users",
+      "amazonUrl": "https://www.amazon.com/dp/B0GJS4XGDJ"
+    },
+    {
+      "slug": "ultrawide-curve",
+      "id": "ultrawide-curve",
+      "name": "34\" Curved Ultrawide Extender",
+      "subtitle": "Immersive 34\" UWQHD 144Hz Monitor",
+      "price": "$529.99",
+      "originalPrice": "$899.99",
+      "discount": "-41%",
+      "rating": 4.8,
+      "reviews": "1,204",
+      "soldBadge": "5,000+ SOLD",
+      "viewingNow": 32,
+      "highlightMessage": "34\" UWQHD 144Hz with 1500R Curvature for Ultimate Immersion",
+      "description": "Expand your horizon with our 34-inch curved ultrawide extender. Perfect for gamers, video editors, and financial analysts who need massive horizontal screen real estate without the bezel interruption of dual monitors.",
+      "features": [
+        "34\" UWQHD (3440 x 1440) Resolution",
+        "144Hz Refresh Rate",
+        "1500R Curvature",
+        "120% sRGB Color Gamut",
+        "USB-C & HDMI & DisplayPort",
+        "Built-in Stereo Speakers"
+      ],
+      "specs": {
+        "Screen Size": "34 inches",
+        "Resolution": "3440 x 1440 (UWQHD)",
+        "Curvature": "1500R",
+        "Color Gamut": "120% sRGB",
+        "Brightness": "400 nits",
+        "Refresh Rate": "144Hz",
+        "Contrast Ratio": "4000:1",
+        "Panel": "VA Panel",
+        "Aspect Ratio": "21:9",
+        "Weight": "16.5 lbs",
+        "Compatibility": "macOS, Windows, Linux",
+        "Interface": "USB-C, HDMI 2.0, DP 1.4"
+      },
+      "images": {
+        "thumbnail": "/product-1.jpg",
+        "gallery": [
+          "/product-1.jpg",
+          "/product-2.jpg",
+          "/product-3.jpg",
+          "/product-4.jpg"
+        ],
+        "aplusContent": [
+          "/aplus-1.jpg",
+          "/aplus-2.jpg",
+          "/aplus-3.jpg",
+          "/aplus-4.jpg"
+        ]
+      },
+      "best": "Best for Content Creators",
+      "amazonUrl": "https://www.amazon.com/dp/B0GJSXXXXXXXX"
+    }
+  ]
+}
