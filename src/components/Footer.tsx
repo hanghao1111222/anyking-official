@@ -15,63 +15,71 @@ export default function Footer() {
           {/* Shop the Store */}
           <div>
             <h3 className="font-bold text-gray-900 mb-6 uppercase tracking-wider text-sm">Shop the Store</h3>
-            <ul className="space-y-4 text-sm font-medium">
+            <ul className="space-y-4 text-sm font-medium text-gray-500 uppercase tracking-widest text-[10px]">
               <li><Link href="/" className="hover:text-blue-600 transition-colors">New Arrival</Link></li>
-              <li><Link href="/product/dual-screen" className="hover:text-blue-600 transition-colors">Extend to Dual Screens</Link></li>
-              <li><Link href="/product/triple-screen" className="hover:text-blue-600 transition-colors">Extend to Triple Screens</Link></li>
-              <li><Link href="#" className="hover:text-blue-600 transition-colors">Accessories</Link></li>
-              <li><Link href="#" className="hover:text-blue-600 transition-colors">Model Comparison</Link></li>
+              <li><Link href="/product/dual-screen" className="hover:text-blue-600 transition-colors">Dual Screen Extender</Link></li>
+              <li><Link href="/product/triple-screen" className="hover:text-blue-600 transition-colors">Triple Screen Extender</Link></li>
+              <li><Link href="/support/faqs" className="hover:text-blue-600 transition-colors">Accessories</Link></li>
+              <li><Link href="/model-comparison" className="hover:text-blue-600 transition-colors">Model Comparison</Link></li>
             </ul>
+
+
           </div>
 
           {/* Support */}
           <div>
             <h3 className="font-bold text-gray-900 mb-6 uppercase tracking-wider text-sm">Support</h3>
-            <ul className="space-y-4 text-sm font-medium">
-              <li><Link href="#" className="hover:text-blue-600 transition-colors">Contact Us</Link></li>
-              <li><Link href="#" className="hover:text-blue-600 transition-colors">FAQs</Link></li>
-              <li><Link href="#" className="hover:text-blue-600 transition-colors">Shipping</Link></li>
-              <li><Link href="#" className="hover:text-blue-600 transition-colors">Warranty</Link></li>
-              <li><Link href="#" className="hover:text-blue-600 transition-colors">Return & Refund</Link></li>
-              <li><Link href="#" className="hover:text-blue-600 transition-colors">User Manual</Link></li>
+            <ul className="space-y-4 text-sm font-medium text-gray-500 uppercase tracking-widest text-[10px]">
+              <li><Link href="/support/contact" className="hover:text-blue-600 transition-colors">Contact Us</Link></li>
+              <li><Link href="/support/faqs" className="hover:text-blue-600 transition-colors">FAQs</Link></li>
+              <li><Link href="/support/shipping" className="hover:text-blue-600 transition-colors">Shipping</Link></li>
+              <li><Link href="/support/faqs" className="hover:text-blue-600 transition-colors">Warranty</Link></li>
+              <li><Link href="/support/returns" className="hover:text-blue-600 transition-colors">Return & Refund</Link></li>
+              <li><Link href="/support/faqs" className="hover:text-blue-600 transition-colors">User Manual</Link></li>
             </ul>
+
           </div>
 
           {/* Information */}
           <div>
             <h3 className="font-bold text-gray-900 mb-6 uppercase tracking-wider text-sm">Information</h3>
-            <ul className="space-y-4 text-sm font-medium">
-              <li><Link href="#" className="hover:text-blue-600 transition-colors">About Us</Link></li>
-              <li><Link href="#" className="hover:text-blue-600 transition-colors">Blog & News</Link></li>
-              <li><Link href="#" className="hover:text-blue-600 transition-colors">Compatibility</Link></li>
-              <li><Link href="#" className="hover:text-blue-600 transition-colors">Privacy Policy</Link></li>
-              <li><Link href="#" className="hover:text-blue-600 transition-colors">Terms of Service</Link></li>
-              <li><Link href="#" className="hover:text-blue-600 transition-colors">Payment Notice</Link></li>
+            <ul className="space-y-4 text-sm font-medium text-gray-500 uppercase tracking-widest text-[10px]">
+              <li><Link href="/about" className="hover:text-blue-600 transition-colors">About Us</Link></li>
+              <li><Link href="/about" className="hover:text-blue-600 transition-colors">Blog & News</Link></li>
+              <li><Link href="/support/faqs" className="hover:text-blue-600 transition-colors">Compatibility</Link></li>
+              <li><Link href="/legal/privacy" className="hover:text-blue-600 transition-colors">Privacy Policy</Link></li>
+              <li><Link href="/legal/terms" className="hover:text-blue-600 transition-colors">Terms of Service</Link></li>
+              <li><Link href="/legal/terms" className="hover:text-blue-600 transition-colors">Payment Notice</Link></li>
             </ul>
+
           </div>
 
           {/* Get in Touch */}
           <div className="space-y-8">
             <div>
               <h3 className="font-bold text-gray-900 mb-6 uppercase tracking-wider text-sm">Get in touch</h3>
-              <div className="flex items-center gap-2 text-sm font-medium hover:text-blue-600 transition-colors cursor-pointer">
+              <a href="mailto:support@anyking.official.com" className="flex items-center gap-2 text-sm font-medium hover:text-blue-600 transition-colors">
                 <Mail className="w-5 h-5" />
                 <span>support@anyking.official.com</span>
-              </div>
+              </a>
+
             </div>
 
             <div>
               <h3 className="font-bold text-gray-900 mb-4 uppercase tracking-wider text-sm">Follow us</h3>
               <div className="flex items-center gap-4">
-                <Link href="#" className="text-gray-600 hover:text-blue-600 transition-all hover:scale-110">
+                <Link href="/" className="text-gray-600 hover:text-blue-600 transition-all hover:scale-110">
+
                   <Facebook className="w-5 h-5" />
                 </Link>
-                <Link href="#" className="text-gray-600 hover:text-blue-600 transition-all hover:scale-110">
+                <Link href="/" className="text-gray-600 hover:text-blue-600 transition-all hover:scale-110">
+
                   <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
                     <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.04-.1z"/>
                   </svg>
                 </Link>
-                <Link href="#" className="text-gray-600 hover:text-blue-600 transition-all hover:scale-110">
+                <Link href="/" className="text-gray-600 hover:text-blue-600 transition-all hover:scale-110">
+
                   <Youtube className="w-5 h-5" />
                 </Link>
               </div>

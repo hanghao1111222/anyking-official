@@ -24,10 +24,11 @@ export default function SignInPage() {
           <div className="w-12 h-12 bg-gray-900 rounded-2xl flex items-center justify-center transition-transform group-hover:scale-110">
             <Monitor className="w-7 h-7 text-white" />
           </div>
-          <span className="text-3xl font-black text-gray-900 tracking-tighter uppercase italic">
+          <span className="text-xl font-bold text-gray-900 tracking-tight">
             Anyking
           </span>
         </Link>
+
         <h2 className="text-center text-3xl font-extrabold text-gray-900 tracking-tight">
           Welcome back
         </h2>
@@ -107,9 +108,10 @@ export default function SignInPage() {
               </div>
 
               <div className="text-sm">
-                <a href="#" className="font-bold text-blue-600 hover:text-blue-500">
+                <Link href="/" className="font-bold text-blue-600 hover:text-blue-500">
                   Forgot password?
-                </a>
+                </Link>
+
               </div>
             </div>
 
@@ -134,21 +136,29 @@ export default function SignInPage() {
             </div>
 
             <div className="mt-8 grid grid-cols-2 gap-4">
-              <button className="w-full flex items-center justify-center py-3 border border-gray-100 rounded-2xl hover:bg-gray-50 transition-colors font-medium">
+              <button 
+                onClick={() => window.location.href = 'https://accounts.google.com'}
+                className="w-full flex items-center justify-center py-3 border border-gray-100 rounded-2xl hover:bg-gray-50 transition-colors font-medium text-gray-700"
+              >
                 Google
               </button>
-              <button className="w-full flex items-center justify-center py-3 border border-gray-100 rounded-2xl hover:bg-gray-50 transition-colors font-medium">
+              <button 
+                onClick={() => window.location.href = 'https://appleid.apple.com'}
+                className="w-full flex items-center justify-center py-3 border border-gray-100 rounded-2xl hover:bg-gray-50 transition-colors font-medium text-gray-700"
+              >
                 Apple
               </button>
             </div>
+
           </div>
         </div>
         
         <p className="mt-10 text-center text-sm text-gray-500">
           Don't have an account?{' '}
-          <a href="#" className="font-bold text-gray-900 hover:underline">
+          <Link href="/" className="font-bold text-gray-900 hover:underline">
             Request early access
-          </a>
+          </Link>
+
         </p>
 
         <div className="mt-12 flex justify-center">

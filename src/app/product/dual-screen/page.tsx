@@ -33,8 +33,10 @@ import {
   Play,
   Maximize,
   Volume2,
-  User
+  User,
+  ShoppingBag
 } from 'lucide-react';
+
 
 interface ProductInfo {
   name: string;
@@ -45,7 +47,9 @@ interface ProductInfo {
   features: string[];
   specs: Record<string, string>;
   images: string[];
+  reviews: string;
 }
+
 
 const defaultProduct: ProductInfo = {
   name: 'Laptop Screen Extender, 14" FHD 1080P Portable Monitor for Laptop with 100% sRGB',
@@ -88,8 +92,10 @@ const defaultProduct: ProductInfo = {
     '/product-6.jpg',
     '/product-7.jpg',
     '/product-8.jpg'
-  ]
+  ],
+  reviews: '3,842'
 };
+
 
 export default function HomePage() {
   const [url, setUrl] = useState('');
@@ -102,7 +108,9 @@ export default function HomePage() {
   const [zoomPosition, setZoomPosition] = useState({ x: 0, y: 0 });
   const [imageRef, setImageRef] = useState<HTMLDivElement | null>(null);
   const [showAllSpecs, setShowAllSpecs] = useState(false);
+  const [showAllReviews, setShowAllReviews] = useState(false);
   const [quantity, setQuantity] = useState(1);
+
   const { addItem } = useCart();
   const router = useRouter();
 
@@ -256,13 +264,14 @@ export default function HomePage() {
       {/* Breadcrumb */}
       <div className="pt-20 pb-4 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <nav className="text-sm text-gray-500">
-            <span>Electronics</span>
-            <span className="mx-2">/</span>
-            <span>Monitors</span>
-            <span className="mx-2">/</span>
+          <nav className="text-sm text-gray-500 font-medium flex items-center">
+            <Link href="/" className="hover:text-blue-600 transition-colors">Electronics</Link>
+            <span className="mx-2 text-gray-300">/</span>
+            <Link href="/" className="hover:text-blue-600 transition-colors">Monitors</Link>
+            <span className="mx-2 text-gray-300">/</span>
             <span className="text-gray-900">Portable Monitors</span>
           </nav>
+
         </div>
       </div>
 
@@ -397,7 +406,8 @@ export default function HomePage() {
                     <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                   ))}
                 </div>
-                <span className="text-gray-600 font-medium">4.9 (2,847 reviews)</span>
+                <span className="text-gray-600 font-medium">4.9 ({product.reviews} reviews)</span>
+
               </div>
 
               {/* Price Section */}
@@ -413,7 +423,14 @@ export default function HomePage() {
                     {product.discount}
                   </span>
                 </div>
-                <p className="text-sm text-gray-500">Price includes VAT. Free shipping.</p>
+                <div className="flex items-center gap-2">
+                  <p className="text-sm text-gray-500">Price includes VAT. Free shipping.</p>
+                  <div className="flex items-center gap-1.5 px-3 py-1 bg-green-50 text-green-700 rounded-full border border-green-100">
+                    <ShoppingBag className="w-4 h-4" />
+                    <span className="text-xs font-bold uppercase tracking-wider">12,450+ Sold</span>
+                  </div>
+                </div>
+
               </div>
 
               {/* Social Proof - Real-time Viewers */}
@@ -485,7 +502,8 @@ export default function HomePage() {
       </section>
 
       {/* Product Details Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <section id="features" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Side - Content */}
@@ -1149,7 +1167,63 @@ export default function HomePage() {
                   helpful: 12,
                   avatar: 'D'
                 },
-              ].map((review, index) => (
+                {
+                  name: 'Thomas Müller',
+                  rating: 5,
+                  title: 'Sehr gute Qualität!',
+                  date: 'March 10, 2026',
+                  location: 'Germany',
+                  content: 'The 100% sRGB panel is real. I use it for color-critical work and it matches my calibrated laptop screen perfectly. Shipping to Munich was very fast (5 days). One cable connection is the best feature.',
+                  verified: true,
+                  helpful: 8,
+                  avatar: 'T'
+                },
+                {
+                  name: 'Li Wei',
+                  rating: 5,
+                  title: 'Excellent for multitasking',
+                  date: 'March 5, 2026',
+                  location: 'China',
+                  content: 'Very good build quality. Fits my 15.6 inch laptop perfectly. I can now trade stocks with three windows open at once. Highly recommended for power users.',
+                  verified: true,
+                  helpful: 15,
+                  avatar: 'L'
+                },
+                {
+                  name: 'James Wilson',
+                  rating: 5,
+                  title: 'A must-have for developers',
+                  date: 'February 20, 2026',
+                  location: 'United Kingdom',
+                  content: 'Absolute game changer. I used to struggle with only one screen when traveling, but now I have my IDE and terminal always visible. High brightness and great colors.',
+                  verified: true,
+                  helpful: 31,
+                  avatar: 'J'
+                },
+                {
+                  name: 'Elena Rodriguez',
+                  rating: 5,
+                  title: 'Super compact and powerful',
+                  date: 'March 1, 2026',
+                  location: 'Spain',
+                  content: 'The weight is the most surprising part—it’s so light! It doesn’t pull on my laptop hinges at all. The 1080P resolution is sharp and crisp.',
+                  verified: true,
+                  helpful: 7,
+                  avatar: 'E'
+                },
+                {
+                  name: 'Robert Brown',
+                  rating: 5,
+                  title: 'Reliable professional tool',
+                  date: 'February 12, 2026',
+                  location: 'United States',
+                  content: 'Using this for 1 month now. No issues at all. Plug and play every morning. The protection case it came with is high quality as well.',
+                  verified: true,
+                  helpful: 22,
+                  avatar: 'R'
+                }
+              ].filter((_, i) => showAllReviews || i < 3).map((review, index) => (
+
                 <div key={index} className="bg-white rounded-lg p-6 border border-gray-200">
                   {/* Reviewer Info */}
                   <div className="flex items-start gap-3 mb-3">
@@ -1198,9 +1272,14 @@ export default function HomePage() {
               ))}
 
               {/* See All Reviews Button */}
-              <button className="w-full py-3 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors">
-                See all 44 reviews
+              <button 
+                onClick={() => setShowAllReviews(!showAllReviews)}
+                className="w-full py-3 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors"
+              >
+                {showAllReviews ? 'Show less' : `See all ${product.reviews} reviews`}
+
               </button>
+
             </div>
           </div>
         </div>

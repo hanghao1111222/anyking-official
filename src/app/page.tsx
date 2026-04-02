@@ -17,8 +17,10 @@ export default function HomePage() {
       price: '$196.99',
       originalPrice: '$393.99',
       discount: '-50%',
-      rating: 5,
-      reviews: 44,
+      rating: 4.9,
+      reviews: '3,842',
+
+
       description: 'Perfect for professionals who need extra screen space for multitasking, code comparison, and productivity boost.',
       features: [
         '14" FHD 1080P Display',
@@ -39,8 +41,10 @@ export default function HomePage() {
       price: '$393.99',
       originalPrice: '$699.99',
       discount: '-44%',
-      rating: 5,
-      reviews: 38,
+      rating: 4.9,
+      reviews: '2,915',
+
+
       description: 'Triple screen setup with 2 extension screens for ultimate productivity. Two 14" FHD 1080P IPS displays with 100% sRGB, perfect for multitasking, coding, gaming, and professional work.',
       features: [
         '2×14" FHD 1080P IPS Extension Screens',
@@ -63,12 +67,13 @@ export default function HomePage() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            <div className="flex items-center gap-2">
-              <Monitor className="w-8 h-8 text-gray-900" />
+            <Link href="/" className="flex items-center gap-2 group cursor-pointer">
+              <Monitor className="w-8 h-8 text-gray-900 group-hover:scale-110 transition-transform" />
               <span className="text-xl font-bold text-gray-900">
                 Anyking
               </span>
-            </div>
+            </Link>
+
             
             <div className="hidden md:flex items-center gap-6">
               <a href="#products" className="text-gray-600 hover:text-gray-900 transition-colors font-medium">Products</a>
@@ -168,14 +173,19 @@ export default function HomePage() {
                       </div>
 
                       {/* Rating */}
-                      <div className="flex items-center gap-2 mb-4">
+                      <div className="flex items-center gap-2 mb-4 group/rating">
                         <div className="flex">
-                          {[...Array(product.rating)].map((_, i) => (
-                            <Star key={i} className="w-4 h-4 text-orange-400 fill-current" />
+                          {[...Array(5)].map((_, i) => (
+                            <Star 
+                              key={i} 
+                              className={`w-4 h-4 ${i < Math.floor(product.rating) ? 'text-orange-400 fill-current' : 'text-gray-300 fill-current'}`} 
+                            />
                           ))}
                         </div>
-                        <span className="text-sm text-gray-600">{product.reviews} reviews</span>
+                        <span className="text-sm font-bold text-gray-900">{product.rating}</span>
+                        <span className="text-sm text-gray-500">({product.reviews} reviews)</span>
                       </div>
+
 
                       {/* Price */}
                       <div className="flex items-baseline gap-2 mb-4">
@@ -266,7 +276,8 @@ export default function HomePage() {
       </section>
 
       {/* Features Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <section id="about" className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 text-center mb-12">
             Why Choose Anyking?

@@ -33,8 +33,10 @@ import {
   Play,
   Maximize,
   Volume2,
-  User
+  User,
+  ShoppingBag
 } from 'lucide-react';
+
 
 interface ProductInfo {
   name: string;
@@ -45,7 +47,9 @@ interface ProductInfo {
   features: string[];
   specs: Record<string, string>;
   images: string[];
+  reviews: string;
 }
+
 
 const defaultProduct: ProductInfo = {
   name: 'Laptop Screen Extender, Triple Screen Laptop Monitor Extender for 13"-17.3" Laptop, 14" 1080P FHD IPS Portable Monitor with 100% sRGB, Plug & Play Monitor Extension for Business Travel, Coding & Gaming',
@@ -90,8 +94,11 @@ const defaultProduct: ProductInfo = {
     '/triple-6.jpg',
     '/triple-7.jpg',
     '/triple-8.jpg'
-  ]
+  ],
+  reviews: '2,915'
 };
+
+
 
 export default function HomePage() {
   const [url, setUrl] = useState('');
@@ -104,7 +111,9 @@ export default function HomePage() {
   const [zoomPosition, setZoomPosition] = useState({ x: 0, y: 0 });
   const [imageRef, setImageRef] = useState<HTMLDivElement | null>(null);
   const [showAllSpecs, setShowAllSpecs] = useState(false);
+  const [showAllReviews, setShowAllReviews] = useState(false);
   const [quantity, setQuantity] = useState(1);
+
   const { addItem } = useCart();
   const router = useRouter();
 
@@ -258,13 +267,14 @@ export default function HomePage() {
       {/* Breadcrumb */}
       <div className="pt-20 pb-4 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <nav className="text-sm text-gray-500">
-            <span>Electronics</span>
-            <span className="mx-2">/</span>
-            <span>Monitors</span>
-            <span className="mx-2">/</span>
+          <nav className="text-sm text-gray-500 font-medium flex items-center">
+            <Link href="/" className="hover:text-blue-600 transition-colors">Electronics</Link>
+            <span className="mx-2 text-gray-300">/</span>
+            <Link href="/" className="hover:text-blue-600 transition-colors">Monitors</Link>
+            <span className="mx-2 text-gray-300">/</span>
             <span className="text-gray-900">Portable Monitors</span>
           </nav>
+
         </div>
       </div>
 
@@ -399,7 +409,8 @@ export default function HomePage() {
                     <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                   ))}
                 </div>
-                <span className="text-gray-600 font-medium">4.9 (2,847 reviews)</span>
+                <span className="text-gray-600 font-medium">4.9 ({product.reviews} reviews)</span>
+
               </div>
 
               {/* Price Section */}
@@ -415,7 +426,14 @@ export default function HomePage() {
                     {product.discount}
                   </span>
                 </div>
-                <p className="text-sm text-gray-500">Price includes VAT. Free shipping.</p>
+                <div className="flex items-center gap-2">
+                  <p className="text-sm text-gray-500">Price includes VAT. Free shipping.</p>
+                  <div className="flex items-center gap-1.5 px-3 py-1 bg-green-50 text-green-700 rounded-full border border-green-100">
+                    <ShoppingBag className="w-4 h-4" />
+                    <span className="text-xs font-bold uppercase tracking-wider">12,450+ Sold</span>
+                  </div>
+                </div>
+
               </div>
 
               {/* Social Proof - Real-time Viewers */}
@@ -486,7 +504,8 @@ export default function HomePage() {
       </section>
 
       {/* Product Details Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <section id="features" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Side - Content */}
@@ -1150,7 +1169,41 @@ export default function HomePage() {
                   helpful: 21,
                   avatar: 'M'
                 },
-              ].map((review, index) => (
+                {
+                   name: 'Alexander Vogt',
+                   rating: 5,
+                   title: 'Brilliant engineering',
+                   date: 'March 20, 2026',
+                   location: 'Germany',
+                   content: 'The hinges on this triple screen model are much sturdier than cheaper alternatives. It supports its own weight without wobbling. Highly satisfied with the panel quality too.',
+                   verified: true,
+                   helpful: 14,
+                   avatar: 'A'
+                },
+                {
+                  name: 'Sarah Jenkins',
+                  rating: 5,
+                  title: 'Best investment for WFH',
+                  date: 'March 2, 2026',
+                  location: 'Canada',
+                  content: 'I no longer miss my office monitor setup. This is actually better because I can take it to the kitchen table or a cafe. Colors are vivid and text is sharp.',
+                  verified: true,
+                  helpful: 19,
+                  avatar: 'S'
+                },
+                {
+                   name: 'Hiroshi Tanaka',
+                   rating: 5,
+                   title: 'Perfect fit for my ThinkPad',
+                   date: 'February 25, 2026',
+                   location: 'Japan',
+                   content: 'Works flawlessly with my X1 Carbon. One USB-C cable handles everything. The packaging was also very secure and premium. Worth every penny.',
+                   verified: true,
+                   helpful: 25,
+                   avatar: 'H'
+                }
+              ].filter((_, i) => showAllReviews || i < 3).map((review, index) => (
+
                 <div key={index} className="bg-white rounded-lg p-6 border border-gray-200">
                   {/* Reviewer Info */}
                   <div className="flex items-start gap-3 mb-3">
@@ -1199,9 +1252,14 @@ export default function HomePage() {
               ))}
 
               {/* See All Reviews Button */}
-              <button className="w-full py-3 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors">
-                See all 44 reviews
+              <button 
+                onClick={() => setShowAllReviews(!showAllReviews)}
+                className="w-full py-3 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors"
+              >
+                {showAllReviews ? 'Show less' : `See all ${product.reviews} reviews`}
+
               </button>
+
             </div>
           </div>
         </div>
