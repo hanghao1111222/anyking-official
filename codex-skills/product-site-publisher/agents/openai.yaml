@@ -1,0 +1,7 @@
+interface:
+  display_name: "Product Site Publisher"
+  short_description: "Validate, preview, and deploy product sites from materials packages"
+  default_prompt: "Use $product-site-publisher to validate a product materials folder and then preview or deploy the product site from the current repo."
+
+policy:
+  allow_implicit_invocation: true
