@@ -2,43 +2,45 @@
 
 import React from 'react';
 import InfoLayout from '@/components/InfoLayout';
-import { Truck, Globe, Clock, Package } from 'lucide-react';
+import { Clock, Globe, Package } from 'lucide-react';
+import { getFeaturedProduct, getProductSiteContent, getShippingZones, getSiteLanguage, getStoreName } from '@/lib/catalog';
+import { createSiteTranslator } from '@/lib/site-language';
 
 export default function ShippingPage() {
-  const zones = [
-    { zone: 'United States', time: '3-7 Business Days', courier: 'UPS / FedEx' },
-    { zone: 'Canada', time: '5-9 Business Days', courier: 'DHL Express' },
-    { zone: 'Europe', time: '7-12 Business Days', courier: 'DHL / DPD' },
-    { zone: 'Asia / Pacific', time: '6-10 Business Days', courier: 'FedEx' },
-  ];
+  const storeName = getStoreName();
+  const language = getSiteLanguage();
+  const t = createSiteTranslator(language);
+  const product = getFeaturedProduct();
+  const content = getProductSiteContent(product);
+  const zones = getShippingZones();
 
   return (
-    <InfoLayout title="Shipping Policy" category="Support">
+    <InfoLayout title={t('配送ポリシー', 'Shipping Policy', '物流政策')} category={t('サポート', 'Support', '支持')}>
       <div className="space-y-12">
         <section className="space-y-4">
-          <p className="text-gray-600">Anyking is committed to delivering your high-performance workstation as quickly and securely as possible. All orders are processed at our central distribution hub within 1-2 business days.</p>
+          <p className="text-gray-600">{content.support.shippingSummary}</p>
         </section>
 
         <section className="space-y-6">
-          <h2 className="text-xl font-bold flex items-center gap-2">
-            <Clock className="w-5 h-5 text-blue-600" />
-            Estimated Delivery Times
+          <h2 className="flex items-center gap-2 text-xl font-bold">
+            <Clock className="h-5 w-5 text-blue-600" />
+            {t('配送目安', 'Estimated Delivery Times', '配送时效')}
           </h2>
-          <div className="overflow-hidden border border-gray-100 rounded-3xl">
+          <div className="overflow-hidden rounded-3xl border border-gray-100">
             <table className="w-full text-left text-sm">
-              <thead className="bg-gray-50 uppercase tracking-widest text-xs font-bold text-gray-400">
+              <thead className="bg-gray-50 text-xs font-bold uppercase tracking-widest text-gray-400">
                 <tr>
-                  <th className="px-6 py-4">Shipment Zone</th>
-                  <th className="px-6 py-4">Estimated Time</th>
-                  <th className="px-6 py-4">Courier</th>
+                  <th className="px-6 py-4">{t('配送エリア', 'Shipment Zone', '配送区域')}</th>
+                  <th className="px-6 py-4">{t('到着目安', 'Estimated Time', '预计时效')}</th>
+                  <th className="px-6 py-4">{t('配送会社', 'Courier', '承运商')}</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-gray-100 italic">
-                {zones.map((zone, i) => (
-                  <tr key={i} className="hover:bg-blue-50/30 transition-colors">
+              <tbody className="divide-y divide-gray-100">
+                {zones.map(zone => (
+                  <tr key={zone.zone} className="transition-colors hover:bg-blue-50/30">
                     <td className="px-6 py-4 font-bold text-gray-900">{zone.zone}</td>
-                    <td className="px-6 py-4 text-gray-600">{zone.time}</td>
-                    <td className="px-6 py-4 text-gray-600 font-medium">{zone.courier}</td>
+                    <td className="px-6 py-4 text-gray-600">{zone.eta}</td>
+                    <td className="px-6 py-4 font-medium text-gray-600">{zone.courier}</td>
                   </tr>
                 ))}
               </tbody>
@@ -46,32 +48,50 @@ export default function ShippingPage() {
           </div>
         </section>
 
-        <section className="grid md:grid-cols-2 gap-8">
-           <div className="p-8 bg-blue-50/50 rounded-3xl border border-blue-100/50">
-             <div className="w-12 h-12 bg-blue-100 text-blue-700 rounded-xl flex items-center justify-center mb-6">
-               <Package className="w-6 h-6" />
-             </div>
-             <h3 className="font-bold mb-2">Secure Packaging</h3>
-             <p className="text-sm text-gray-600">
-               Each Anyking monitor extender is packed in a triple-layered, anti-static shock-absorbent container to ensure it arrives in the same refined condition it left our facility.
-             </p>
-           </div>
-           
-           <div className="p-8 bg-gray-50 rounded-3xl border border-gray-100">
-             <div className="w-12 h-12 bg-gray-100 text-gray-700 rounded-xl flex items-center justify-center mb-6">
-                <Globe className="w-6 h-6" />
-             </div>
-             <h3 className="font-bold mb-2">Tracking Your Order</h3>
-             <p className="text-sm text-gray-600">
-               As soon as your Anyking ships, you will receive an email with a tracking number. All shipments are insured for their full value during transit.
-             </p>
-           </div>
+        <section className="grid gap-8 md:grid-cols-2">
+          <div className="rounded-3xl border border-blue-100/50 bg-blue-50/50 p-8">
+            <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-blue-100 text-blue-700">
+              <Package className="h-6 w-6" />
+            </div>
+            <h3 className="mb-2 font-bold">{t('梱包基準', 'Packing standard', '包装标准')}</h3>
+            <p className="text-sm text-gray-600">
+              {product?.name
+                ? t(
+                  `${product.name} は輸送中の破損を防ぐ保護梱包で出荷されます。`,
+                  `${product.name} is packed with the protective materials required for parcel shipping and normal warehouse handling.`,
+                  `${product.name} 会使用适合包裹运输的保护性包装发出，以降低运输损坏风险。`,
+                )
+                : t(
+                  `${storeName} はEC配送に適した保護梱包を採用しています。`,
+                  `${storeName} uses protective packaging appropriate for ecommerce fulfilment.`,
+                  `${storeName} 采用适合电商配送的保护性包装方案。`,
+                )}
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-gray-100 bg-gray-50 p-8">
+            <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-gray-100 text-gray-700">
+              <Globe className="h-6 w-6" />
+            </div>
+            <h3 className="mb-2 font-bold">{t('追跡について', 'Tracking your order', '物流追踪')}</h3>
+            <p className="text-sm text-gray-600">
+              {t(
+                '発送確定後、チェックアウト時のメールアドレスへ追跡番号をお送りします。',
+                `As soon as the shipment is confirmed, ${storeName} sends a tracking update to the email used during checkout.`,
+                `发货确认后，${storeName} 会把物流追踪信息发送到你下单时填写的邮箱。`,
+              )}
+            </p>
+          </div>
         </section>
 
         <section>
-          <p className="text-xs text-gray-400 font-bold uppercase tracking-widest">Questions about customs or duties?</p>
-          <p className="text-sm text-gray-600 mt-2">
-            Import duties and taxes are not included in the purchase price. These charges are the responsibility of the recipient and are generally collected by the courier upon delivery.
+          <p className="text-xs font-bold uppercase tracking-widest text-gray-400">{t('関税・輸入税', 'Customs and duties', '关税与进口税')}</p>
+          <p className="mt-2 text-sm text-gray-600">
+            {t(
+              '関税・輸入税は配送先国の規定に基づき、特別記載がない限り受取人負担となります。',
+              'Local import duties or taxes are charged according to the destination country and are the responsibility of the recipient unless otherwise stated on the checkout page.',
+              '关税和进口税将根据收货国家/地区规定收取，除非结账页面另有说明，否则通常由收件人承担。',
+            )}
           </p>
         </section>
       </div>
