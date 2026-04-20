@@ -1,0 +1,27 @@
+{
+  "slug": "portable-monitor-pro",
+  "id": "portable-monitor-pro",
+  "name": "Portable Monitor Pro",
+  "subtitle": "14-inch FHD laptop screen extender",
+  "price": "$199.99",
+  "originalPrice": "$299.99",
+  "discount": "-33%",
+  "rating": 4.8,
+  "reviews": "0",
+  "soldBadge": "New arrival",
+  "viewingNow": 18,
+  "highlightMessage": "Slim portable monitor for work, travel, and productivity",
+  "description": "A lightweight portable display built for remote work, travel setups, and multi-window productivity.",
+  "features": [
+    "14-inch FHD display",
+    "USB-C and HDMI support",
+    "Lightweight travel-friendly design"
+  ],
+  "specs": {
+    "Screen Size": "14 inches",
+    "Resolution": "1920 x 1080",
+    "Weight": "1.9 lbs"
+  },
+  "best": "Best for remote work",
+  "amazonUrl": "https://www.amazon.com/dp/REPLACE_ME"
+}
