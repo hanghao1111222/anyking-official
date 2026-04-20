@@ -2,7 +2,7 @@
 
 import React from 'react';
 import InfoLayout from '@/components/InfoLayout';
-import { RotateCcw, ShieldCheck, HelpCircle } from 'lucide-react';
+import { ShieldCheck, HelpCircle } from 'lucide-react';
 
 export default function ReturnsPage() {
   return (

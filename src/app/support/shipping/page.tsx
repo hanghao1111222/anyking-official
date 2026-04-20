@@ -2,7 +2,7 @@
 
 import React from 'react';
 import InfoLayout from '@/components/InfoLayout';
-import { Truck, Globe, Clock, Package } from 'lucide-react';
+import { Globe, Clock, Package } from 'lucide-react';
 
 export default function ShippingPage() {
   const zones = [

@@ -2,7 +2,7 @@
 
 import React from 'react';
 import InfoLayout from '@/components/InfoLayout';
-import { Camera, Settings, Cpu } from 'lucide-react';
+import { Settings, Cpu } from 'lucide-react';
 
 export default function AboutPage() {
   return (

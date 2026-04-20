@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Check, X, ShieldCheck, Zap } from 'lucide-react';
+import { Check, ShieldCheck, Zap } from 'lucide-react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 

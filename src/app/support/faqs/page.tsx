@@ -2,7 +2,7 @@
 
 import React from 'react';
 import InfoLayout from '@/components/InfoLayout';
-import { HelpCircle, ChevronDown } from 'lucide-react';
+import { HelpCircle } from 'lucide-react';
 
 export default function FAQPage() {
   const faqs = [

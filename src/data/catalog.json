@@ -1,7 +1,8 @@
 {
   "siteConfig": {
     "storeName": "Anyking",
-    "supportEmail": "support@anyking.outletsday.com"
+    "supportEmail": "support@anyking.outletsday.com",
+    "language": "en"
   },
   "products": [
     {
@@ -12,7 +13,7 @@
       "price": "$196.99",
       "originalPrice": "$393.99",
       "discount": "-50%",
-      "rating": 4.9,
+      "rating": 5,
       "reviews": "3,842",
       "soldBadge": "12,450+ SOLD",
       "viewingNow": 46,
@@ -82,7 +83,7 @@
       "price": "$393.99",
       "originalPrice": "$699.99",
       "discount": "-44%",
-      "rating": 4.9,
+      "rating": 5,
       "reviews": "2,915",
       "soldBadge": "12,450+ SOLD",
       "viewingNow": 49,

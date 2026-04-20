@@ -8,6 +8,10 @@ const eslintConfig = defineConfig([
   {
     rules: {
       'react-hooks/set-state-in-effect': 'off',
+      // Marketing copy contains raw quotes by design; escaping hurts readability.
+      'react/no-unescaped-entities': 'off',
+      // Product detail pages rely on custom zoom/gallery behavior with native img tags.
+      '@next/next/no-img-element': 'off',
     },
   },
   // Override default ignores of eslint-config-next.

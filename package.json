@@ -6,7 +6,8 @@
     "build": "next build",
     "dev": "next dev",
     "preinstall": "npx only-allow pnpm",
-    "lint": "next lint",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "start": "next start",
     "ts-check": "tsc -p tsconfig.json"
 
