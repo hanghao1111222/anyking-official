@@ -46,16 +46,16 @@
         "Cooling": "Rear Hollowed Structure"
       },
       "images": {
-        "thumbnail": "/product-1.jpg",
+        "thumbnail": "/products/dual-screen/gallery-s10/dual-screen-s10-01.jpg",
         "gallery": [
-          "/product-1.jpg",
-          "/product-2.jpg",
-          "/product-3.jpg",
-          "/product-4.jpg",
-          "/product-5.jpg",
-          "/product-6.jpg",
-          "/product-7.jpg",
-          "/product-8.jpg"
+          "/products/dual-screen/gallery-s10/dual-screen-s10-01.jpg",
+          "/products/dual-screen/gallery-s10/dual-screen-s10-03.jpg",
+          "/products/dual-screen/gallery-s10/dual-screen-s10-04.jpg",
+          "/products/dual-screen/gallery-s10/dual-screen-s10-05.jpg",
+          "/products/dual-screen/gallery-s10/dual-screen-s10-06.jpg",
+          "/products/dual-screen/gallery-s10/dual-screen-s10-07.jpg",
+          "/products/dual-screen/gallery-s10/dual-screen-s10-08.jpg",
+          "/products/dual-screen/gallery-s10/dual-screen-s10-09.jpg"
         ],
         "aplusContent": [
           "/aplus-1.jpg",
@@ -117,31 +117,34 @@
         "Modes": "Extended, Mirrored, Portrait"
       },
       "images": {
-        "thumbnail": "/triple-1.jpg",
+        "thumbnail": "/products/triple-screen/gallery-s10/triple-screen-s10-01.jpg",
         "gallery": [
-          "/triple-1.jpg",
-          "/triple-1-1.jpg",
-          "/triple-2.jpg",
-          "/triple-3.jpg",
-          "/triple-4.jpg",
-          "/triple-5.jpg",
-          "/triple-6.jpg",
-          "/triple-7.jpg",
-          "/triple-8.jpg"
+          "/products/triple-screen/gallery-s10/triple-screen-s10-01.jpg",
+          "/products/triple-screen/gallery-s10/triple-screen-s10-03.jpg",
+          "/products/triple-screen/gallery-s10/triple-screen-s10-04.jpg",
+          "/products/triple-screen/gallery-s10/triple-screen-s10-05.jpg",
+          "/products/triple-screen/gallery-s10/triple-screen-s10-06.jpg",
+          "/products/triple-screen/gallery-s10/triple-screen-s10-07.jpg",
+          "/products/triple-screen/gallery-s10/triple-screen-s10-08.jpg",
+          "/products/triple-screen/gallery-s10/triple-screen-s10-09.jpg"
         ],
         "aplusContent": [
-          "/aplus-1.jpg",
-          "/aplus-2.jpg",
-          "/aplus-3.jpg",
-          "/aplus-4.jpg",
-          "/aplus-5.jpg",
-          "/aplus-8.jpg",
-          "/aplus-9.jpg",
-          "/aplus-10.jpg",
-          "/aplus-11.jpg",
-          "/aplus-12.jpg",
-          "/aplus-14.jpg",
-          "/brand-banner.jpg"
+          "/products/triple-screen/aplus-s10/aplus-s10-01.jpg",
+          "/products/triple-screen/aplus-s10/aplus-s10-02.jpg",
+          "/products/triple-screen/aplus-s10/aplus-s10-03.jpg",
+          "/products/triple-screen/aplus-s10/aplus-s10-04.jpg",
+          "/products/triple-screen/aplus-s10/aplus-s10-05.jpg",
+          "/products/triple-screen/aplus-s10/aplus-s10-06.jpg",
+          "/products/triple-screen/aplus-s10/aplus-s10-07.jpg",
+          "/products/triple-screen/aplus-s10/aplus-s10-08.jpg",
+          "/products/triple-screen/aplus-s10/aplus-s10-09.jpg",
+          "/products/triple-screen/aplus-s10/aplus-s10-10.jpg",
+          "/products/triple-screen/aplus-s10/aplus-s10-11.jpg",
+          "/products/triple-screen/aplus-s10/aplus-s10-12.jpg",
+          "/products/triple-screen/aplus-s10/aplus-s10-13.jpg",
+          "/products/triple-screen/aplus-s10/aplus-s10-14.jpg",
+          "/products/triple-screen/aplus-s10/aplus-s10-15.jpg",
+          "/products/triple-screen/aplus-s10/aplus-s10-16.jpg"
         ]
       },
       "best": "Best for Power Users",
