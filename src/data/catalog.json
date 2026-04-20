@@ -46,16 +46,16 @@
         "Cooling": "Rear Hollowed Structure"
       },
       "images": {
-        "thumbnail": "/products/dual-screen/gallery-s10/dual-screen-s10-01.jpg",
+        "thumbnail": "/product-1.jpg",
         "gallery": [
-          "/products/dual-screen/gallery-s10/dual-screen-s10-01.jpg",
-          "/products/dual-screen/gallery-s10/dual-screen-s10-03.jpg",
-          "/products/dual-screen/gallery-s10/dual-screen-s10-04.jpg",
-          "/products/dual-screen/gallery-s10/dual-screen-s10-05.jpg",
-          "/products/dual-screen/gallery-s10/dual-screen-s10-06.jpg",
-          "/products/dual-screen/gallery-s10/dual-screen-s10-07.jpg",
-          "/products/dual-screen/gallery-s10/dual-screen-s10-08.jpg",
-          "/products/dual-screen/gallery-s10/dual-screen-s10-09.jpg"
+          "/product-1.jpg",
+          "/product-2.jpg",
+          "/product-3.jpg",
+          "/product-4.jpg",
+          "/product-5.jpg",
+          "/product-6.jpg",
+          "/product-7.jpg",
+          "/product-8.jpg"
         ],
         "aplusContent": [
           "/aplus-1.jpg",
