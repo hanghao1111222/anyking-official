@@ -1,208 +1,226 @@
 {
   "siteConfig": {
-    "storeName": "Anyking",
-    "supportEmail": "support@anyking.outletsday.com",
-    "language": "en"
+    "storeName": "HUTT-JP",
+    "supportEmail": "XIAOmyong8@outlook.com",
+    "supportPhone": "",
+    "supportAddress": "",
+    "supportResponseTime": "within 24 hours",
+    "market": "JP",
+    "language": "ja",
+    "featuredProductSlug": "hutt-jp-55n"
   },
   "products": [
     {
-      "slug": "dual-screen",
-      "id": "dual-screen",
-      "name": "Dual Screen Extender",
-      "subtitle": "14\" FHD 1080P Portable Monitor for Laptop with 100% sRGB",
-      "price": "$196.99",
-      "originalPrice": "$393.99",
-      "discount": "-50%",
-      "rating": 5,
-      "reviews": "3,842",
-      "soldBadge": "12,450+ SOLD",
-      "viewingNow": 46,
-      "highlightMessage": "14\" FHD 1080P IPS with 100% sRGB, LED Ambient Ring Light, AI Copilot Ready",
-      "description": "Perfect for professionals who need extra screen space for multitasking, code comparison, and productivity boost. Dual Screen Extender for Laptop 13-17.3\". Plug & Play External Monitor with 14-inch FHD 1080P IPS Display, 100% sRGB color accuracy.",
+      "slug": "hutt-jp-55n",
+      "id": "hutt-jp-55n",
+      "name": "HUTT 窓拭きロボット HUTT10",
+      "subtitle": "6500Pa 強力吸引 / 55N 加圧 / 水拭き・乾拭き同時進行",
+      "price": "￥150,000",
+      "originalPrice": "￥180,000",
+      "discount": "-17%",
+      "rating": 4.9,
+      "reviews": "781",
+      "soldBadge": "HUTT10 公式モデル",
+      "viewingNow": 12,
+      "highlightMessage": "業界初のハイブリッド設計で、窓の四隅までしっかり清掃",
+      "description": "HUTT10 は、丸型回転パッドと四角型仕上げパッドを組み合わせたハイブリッド構造の窓拭きロボットです。6500Pa の強力吸引と 55N の加圧で汚れを浮かせ、水拭きと乾拭きを同時に進めながら窓の四隅まで丁寧に仕上げます。",
       "features": [
-        "14\" FHD 1080P Display",
-        "100% sRGB Color Accuracy",
-        "USB-C Plug & Play",
-        "180° Rotation",
-        "1.9 lbs Lightweight",
-        "AI Copilot Ready"
+        "6500Pa の強力吸引で安定した吸着を実現",
+        "55N 加圧で頑固な汚れもしっかり除去",
+        "水拭きと乾拭きを同時進行するハイブリッド清掃",
+        "0mm エッジ清掃で窓の四隅までアプローチ",
+        "14 個の高精度センサーと落下防止設計",
+        "最大 150㎡ 対応、静音設計で日常使いにも便利"
       ],
       "specs": {
-        "Screen Size": "14 inches",
-        "Resolution": "1920 x 1080P (FHD)",
-        "Color Gamut": "100% sRGB",
-        "Brightness": "300 nits",
-        "Refresh Rate": "60Hz",
-        "Contrast Ratio": "1000:1",
-        "Panel": "IPS Panel",
-        "Aspect Ratio": "16:9",
-        "Weight": "1.9 lbs",
-        "Rotation": "180° Left & Right",
-        "Tilt Angle": "90° Adjustable",
-        "Fit Laptops": "13-17.3 inches",
-        "Compatibility": "macOS, Windows, Linux, Chrome",
-        "Interface": "USB-C (One-cable solution)",
-        "Eye Care": "Anti-Glare & Low Blue Light",
-        "Cooling": "Rear Hollowed Structure"
+        "ブランド": "HUTT",
+        "型番": "HUTT10",
+        "吸引力": "6500Pa",
+        "加圧": "55N",
+        "清掃方式": "水拭き・乾拭き同時進行",
+        "対応面積": "最大150㎡",
+        "騒音": "約65dB",
+        "安全機能": "落下防止センサー / 安全ロープ / UPS"
       },
       "images": {
-        "thumbnail": "/product-1.jpg",
+        "thumbnail": "/products/hutt-jp-55n/thumbnail.png",
         "gallery": [
-          "/product-1.jpg",
-          "/product-2.jpg",
-          "/product-3.jpg",
-          "/product-4.jpg",
-          "/product-5.jpg",
-          "/product-6.jpg",
-          "/product-7.jpg",
-          "/product-8.jpg"
+          "/products/hutt-jp-55n/gallery/01.jpg",
+          "/products/hutt-jp-55n/gallery/02.jpg",
+          "/products/hutt-jp-55n/gallery/03.jpg",
+          "/products/hutt-jp-55n/gallery/04.jpg",
+          "/products/hutt-jp-55n/gallery/05.jpg",
+          "/products/hutt-jp-55n/gallery/06.jpg",
+          "/products/hutt-jp-55n/gallery/07.jpg",
+          "/products/hutt-jp-55n/gallery/08.jpg",
+          "/products/hutt-jp-55n/gallery/09.jpg"
         ],
         "aplusContent": [
-          "/aplus-1.jpg",
-          "/aplus-2.jpg",
-          "/aplus-3.jpg",
-          "/aplus-4.jpg",
-          "/aplus-5.jpg",
-          "/aplus-8.jpg",
-          "/aplus-9.jpg",
-          "/aplus-10.jpg",
-          "/aplus-11.jpg",
-          "/aplus-12.jpg",
-          "/aplus-14.jpg",
-          "/brand-banner.jpg"
+          "/products/hutt-jp-55n/aplus/01.jpg",
+          "/products/hutt-jp-55n/aplus/02.jpg",
+          "/products/hutt-jp-55n/aplus/03.jpg",
+          "/products/hutt-jp-55n/aplus/04.jpg",
+          "/products/hutt-jp-55n/aplus/05.jpg",
+          "/products/hutt-jp-55n/aplus/06.jpg",
+          "/products/hutt-jp-55n/aplus/07.jpg",
+          "/products/hutt-jp-55n/aplus/08.jpg",
+          "/products/hutt-jp-55n/aplus/09.jpg",
+          "/products/hutt-jp-55n/aplus/10.jpg",
+          "/products/hutt-jp-55n/aplus/11.jpg"
         ]
       },
-      "best": "Best for Remote Workers",
-      "amazonUrl": "https://www.amazon.com/dp/B0GJSXHDCG"
-    },
-    {
-      "slug": "triple-screen",
-      "id": "triple-screen",
-      "name": "Triple Screen Extender",
-      "subtitle": "2×14\" FHD 1080P IPS Extension Screens",
-      "price": "$393.99",
-      "originalPrice": "$699.99",
-      "discount": "-44%",
-      "rating": 5,
-      "reviews": "2,915",
-      "soldBadge": "12,450+ SOLD",
-      "viewingNow": 49,
-      "highlightMessage": "2×14\" FHD 1080P IPS with 100% sRGB, LED Ambient Ring Light, AI Copilot Ready",
-      "description": "Triple screen setup with 2 extension screens for ultimate productivity. Two 14\" FHD 1080P IPS displays with 100% sRGB, perfect for multitasking, coding, gaming, and professional work.",
-      "features": [
-        "2×14\" FHD 1080P IPS Extension Screens",
-        "Total 3 Displays (Laptop + 2 Extensions)",
-        "100% sRGB Color Accuracy",
-        "Anti-Glare & Low Blue Light",
-        "USB-C Plug & Play",
-        "Extended, Mirrored, Portrait Modes"
-      ],
-      "specs": {
-        "Extension Screens": "2×14 Inches",
-        "Total Displays": "3 (Laptop + 2 Extension Screens)",
-        "Resolution": "1920 x 1080P (FHD) × 2",
-        "Color Gamut": "100% sRGB",
-        "Brightness": "300 nits",
-        "Refresh Rate": "60Hz",
-        "Contrast Ratio": "1000:1",
-        "Panel": "IPS Panel",
-        "Aspect Ratio": "16:9",
-        "Screen Surface": "Matte (Anti-Glare)",
-        "Weight": "3.5 lbs",
-        "Rotation": "Adjustable Viewing Angles",
-        "Fit Laptops": "13-17.3 inches",
-        "Compatibility": "macOS, Windows, Linux, Chrome",
-        "Interface": "USB-C (Plug & Play)",
-        "Eye Care": "Anti-Glare & Low Blue Light",
-        "Modes": "Extended, Mirrored, Portrait"
-      },
-      "images": {
-        "thumbnail": "/products/triple-screen/gallery-s10/triple-screen-s10-01.jpg",
-        "gallery": [
-          "/products/triple-screen/gallery-s10/triple-screen-s10-01.jpg",
-          "/products/triple-screen/gallery-s10/triple-screen-s10-03.jpg",
-          "/products/triple-screen/gallery-s10/triple-screen-s10-04.jpg",
-          "/products/triple-screen/gallery-s10/triple-screen-s10-05.jpg",
-          "/products/triple-screen/gallery-s10/triple-screen-s10-06.jpg",
-          "/products/triple-screen/gallery-s10/triple-screen-s10-07.jpg",
-          "/products/triple-screen/gallery-s10/triple-screen-s10-08.jpg",
-          "/products/triple-screen/gallery-s10/triple-screen-s10-09.jpg"
+      "best": "高所の窓掃除を安全に任せたい方",
+      "amazonUrl": "",
+      "siteContent": {
+        "hero": {
+          "eyebrow": "HUTT 公式ストア",
+          "headline": "窓掃除の負担を減らす、高所対応ロボット",
+          "subheadline": "HUTT10 は 6500Pa の吸引力と 55N の加圧で、窓の四隅までしっかり清掃。水拭きと乾拭きを同時に進めることで、日常の窓掃除をぐっと楽にします。"
+        },
+        "seo": {
+          "title": "HUTT10 窓拭きロボット | 6500Pa 強力吸引・55N 加圧",
+          "description": "HUTT10 窓拭きロボットは、6500Pa 強力吸引と 55N 加圧、0mm エッジ清掃を備えた高所対応モデルです。水拭き・乾拭きを同時に進め、外窓や大きな窓の掃除を効率化します。",
+          "keywords": [
+            "HUTT10",
+            "窓拭きロボット",
+            "6500Pa",
+            "55N",
+            "高所清掃"
+          ]
+        },
+        "faq": [
+          {
+            "question": "HUTT10 は高所の窓でも安心して使えますか？",
+            "answer": "はい。強力吸引、落下防止センサー、安全ロープ、UPS を組み合わせた設計で、高所の窓でも安定して使用しやすくなっています。"
+          },
+          {
+            "question": "窓の四隅まできれいにできますか？",
+            "answer": "HUTT10 は 0mm エッジ清掃とハイブリッド清掃構造により、拭き残しが出やすい四隅にもアプローチしやすい設計です。"
+          },
+          {
+            "question": "水拭きと乾拭きは別々に行う必要がありますか？",
+            "answer": "いいえ。同時進行で清掃できるため、手間を抑えながらスムーズに仕上げられます。"
+          },
+          {
+            "question": "どのくらいの範囲まで対応できますか？",
+            "answer": "最大 150㎡ までの清掃に対応しています。"
+          }
         ],
-        "aplusContent": [
-          "/products/triple-screen/aplus-s10/aplus-s10-01.jpg",
-          "/products/triple-screen/aplus-s10/aplus-s10-02.jpg",
-          "/products/triple-screen/aplus-s10/aplus-s10-03.jpg",
-          "/products/triple-screen/aplus-s10/aplus-s10-04.jpg",
-          "/products/triple-screen/aplus-s10/aplus-s10-05.jpg",
-          "/products/triple-screen/aplus-s10/aplus-s10-06.jpg",
-          "/products/triple-screen/aplus-s10/aplus-s10-07.jpg",
-          "/products/triple-screen/aplus-s10/aplus-s10-08.jpg",
-          "/products/triple-screen/aplus-s10/aplus-s10-09.jpg",
-          "/products/triple-screen/aplus-s10/aplus-s10-10.jpg",
-          "/products/triple-screen/aplus-s10/aplus-s10-11.jpg",
-          "/products/triple-screen/aplus-s10/aplus-s10-12.jpg",
-          "/products/triple-screen/aplus-s10/aplus-s10-13.jpg",
-          "/products/triple-screen/aplus-s10/aplus-s10-14.jpg",
-          "/products/triple-screen/aplus-s10/aplus-s10-15.jpg",
-          "/products/triple-screen/aplus-s10/aplus-s10-16.jpg"
-        ]
+        "support": {
+          "shippingSummary": "HUTTでは通常、ご注文後7〜15営業日以内に出荷し、配送会社へ引き渡し後に追跡情報をお知らせします。",
+          "returnSummary": "返品条件：付属品・同梱品を含め受領時に近い状態でご返送ください。初期不良を除き、再販売可能な状態であることが必要です。返送前に必ずサポートへご連絡ください。",
+          "contactSummary": "注文番号と返品理由を記載して XIAOmyong8@outlook.com までご連絡ください。"
+        }
       },
-      "best": "Best for Power Users",
-      "amazonUrl": "https://www.amazon.com/dp/B0GJS4XGDJ"
+      "hasVideo": false
     },
     {
-      "slug": "ultrawide-curve",
-      "id": "ultrawide-curve",
-      "name": "34\" Curved Ultrawide Extender",
-      "subtitle": "Immersive 34\" UWQHD 144Hz Monitor",
-      "price": "$529.99",
-      "originalPrice": "$899.99",
-      "discount": "-41%",
+      "slug": "ddc55pro",
+      "id": "ddc55pro",
+      "name": "HUTT 窓拭きロボット DDC55pro",
+      "subtitle": "2026年革新モデル / 3Dサスペンション / 70rpm デュアルモップ",
+      "price": "￥120,000",
+      "originalPrice": "￥120,000",
+      "discount": "",
       "rating": 4.8,
-      "reviews": "1,204",
-      "soldBadge": "5,000+ SOLD",
-      "viewingNow": 32,
-      "highlightMessage": "34\" UWQHD 144Hz with 1500R Curvature for Ultimate Immersion",
-      "description": "Expand your horizon with our 34-inch curved ultrawide extender. Perfect for gamers, video editors, and financial analysts who need massive horizontal screen real estate without the bezel interruption of dual monitors.",
+      "reviews": "300",
+      "soldBadge": "2026年革新モデル",
+      "viewingNow": 18,
+      "highlightMessage": "落下防止と拭きムラ対策を両立した多素材対応モデル",
+      "description": "DDC55pro は、3D サスペンションと強力吸引を組み合わせて、高所のガラス面でも安定した清掃を実現する窓拭きロボットです。毎分 70 回転のデュアルモップと M 型広角パルススプレーで、水滴跡を残しにくい仕上がりを目指しながら、ガラス・タイル・鏡・木材などのフラット面にも対応します。",
       "features": [
-        "34\" UWQHD (3440 x 1440) Resolution",
-        "144Hz Refresh Rate",
-        "1500R Curvature",
-        "120% sRGB Color Gamut",
-        "USB-C & HDMI & DisplayPort",
-        "Built-in Stereo Speakers"
+        "3D サスペンションと強力吸引で高所でも安定",
+        "毎分 70 回転のデュアルモップで頑固な汚れに対応",
+        "M 型広角パルススプレーで水滴跡を残しにくい",
+        "80ml の可視化大容量タンクで給水回数を削減",
+        "ガラス・タイル・鏡・木材などの平滑面に対応",
+        "UPS と安全ロープを備えた安心設計"
       ],
       "specs": {
-        "Screen Size": "34 inches",
-        "Resolution": "3440 x 1440 (UWQHD)",
-        "Curvature": "1500R",
-        "Color Gamut": "120% sRGB",
-        "Brightness": "400 nits",
-        "Refresh Rate": "144Hz",
-        "Contrast Ratio": "4000:1",
-        "Panel": "VA Panel",
-        "Aspect Ratio": "21:9",
-        "Weight": "16.5 lbs",
-        "Compatibility": "macOS, Windows, Linux",
-        "Interface": "USB-C, HDMI 2.0, DP 1.4"
+        "ブランド": "HUTT",
+        "型番": "DDC55pro",
+        "吸引力": "6500Pa",
+        "モップ": "毎分70回転のデュアルモップ",
+        "水タンク": "80ml",
+        "対応素材": "ガラス / タイル / 鏡 / 木材",
+        "安全機能": "UPS / 安全ロープ / 落下防止",
+        "認証": "PSE認証済み"
       },
       "images": {
-        "thumbnail": "/product-1.jpg",
+        "thumbnail": "/products/ddc55pro/thumbnail.jpg",
         "gallery": [
-          "/product-1.jpg",
-          "/product-2.jpg",
-          "/product-3.jpg",
-          "/product-4.jpg"
+          "/products/ddc55pro/gallery/01.jpg",
+          "/products/ddc55pro/gallery/02.jpg",
+          "/products/ddc55pro/gallery/03.jpg",
+          "/products/ddc55pro/gallery/04.jpg",
+          "/products/ddc55pro/gallery/05.jpg",
+          "/products/ddc55pro/gallery/06.jpg",
+          "/products/ddc55pro/gallery/07.jpg",
+          "/products/ddc55pro/gallery/08.jpg",
+          "/products/ddc55pro/gallery/09.jpg"
         ],
         "aplusContent": [
-          "/aplus-1.jpg",
-          "/aplus-2.jpg",
-          "/aplus-3.jpg",
-          "/aplus-4.jpg"
+          "/products/ddc55pro/aplus/01.jpg",
+          "/products/ddc55pro/aplus/02.jpg",
+          "/products/ddc55pro/aplus/03.jpg",
+          "/products/ddc55pro/aplus/04.jpg",
+          "/products/ddc55pro/aplus/05.jpg",
+          "/products/ddc55pro/aplus/06.jpg",
+          "/products/ddc55pro/aplus/07.jpg",
+          "/products/ddc55pro/aplus/08.jpg",
+          "/products/ddc55pro/aplus/09.jpg",
+          "/products/ddc55pro/aplus/10.jpg",
+          "/products/ddc55pro/aplus/11.jpg",
+          "/products/ddc55pro/aplus/12.jpg",
+          "/products/ddc55pro/aplus/13.jpg",
+          "/products/ddc55pro/aplus/14.jpg",
+          "/products/ddc55pro/aplus/15.jpg"
         ]
       },
-      "best": "Best for Content Creators",
-      "amazonUrl": "https://www.amazon.com/dp/B0GJSXXXXXXXX"
+      "best": "多素材を一台で掃除したい方",
+      "amazonUrl": "",
+      "siteContent": {
+        "hero": {
+          "eyebrow": "DDC55pro",
+          "headline": "窓掃除をもっと静かに、もっと賢く",
+          "subheadline": "DDC55pro は 3D サスペンション、70rpm デュアルモップ、M 型広角スプレーを組み合わせた 2026 年モデルです。ガラスからタイル、鏡、木材まで、幅広いフラット面の清掃に対応します。"
+        },
+        "seo": {
+          "title": "HUTT DDC55pro 窓拭きロボット | 3Dサスペンション・70rpm",
+          "description": "HUTT DDC55pro は、3D サスペンション、70rpm デュアルモップ、80ml タンクを備えた多素材対応の窓拭きロボットです。高所の窓掃除をより安全で、より効率的にします。",
+          "keywords": [
+            "DDC55pro",
+            "窓拭きロボット",
+            "3Dサスペンション",
+            "70rpm",
+            "多素材対応"
+          ]
+        },
+        "faq": [
+          {
+            "question": "DDC55pro はどんな素材に使えますか？",
+            "answer": "ガラス、タイル、鏡、木材などの平滑面に対応しています。"
+          },
+          {
+            "question": "水滴の跡は残りにくいですか？",
+            "answer": "M 型広角パルススプレーとデュアルモップの組み合わせにより、水滴跡を残しにくい仕上がりを目指しています。"
+          },
+          {
+            "question": "途中で水が足りなくなりにくいですか？",
+            "answer": "80ml の可視化大容量タンクを搭載しているため、給水回数を抑えながら広い範囲を掃除しやすくなっています。"
+          },
+          {
+            "question": "高所でも安全に使えますか？",
+            "answer": "3D サスペンション、強力吸引、UPS、安全ロープを組み合わせて、高所清掃の安定性に配慮しています。"
+          }
+        ],
+        "support": {
+          "shippingSummary": "迅速・安心なお届け。全品送料無料で最短翌日にお届けします。発送完了後は追跡番号で配送状況をご確認いただけます。",
+          "returnSummary": "30日間返品・返金保証。商品到着後30日以内であれば返品・交換をご相談いただけます。初期不良はもちろん、ご満足いただけない場合もお気軽にご連絡ください。",
+          "contactSummary": "製品の使い方やお手入れ方法、トラブルなどは HUTT 専門サポートチームまでお問い合わせください。"
+        }
+      },
+      "hasVideo": false
     }
   ]
 }

@@ -18,27 +18,36 @@ export default function HomePage() {
   const catalogProducts = catalogData.products as unknown as Product[];
 
   const products = catalogProducts
-    .filter(product => ['dual-screen', 'triple-screen'].includes(product.slug) && product.name)
+    .filter(product => ['hutt-jp-55n', 'ddc55pro'].includes(product.slug) && product.name)
     .map(product => ({
-    id: product.slug,
-    name: product.name,
-    subtitle: product.subtitle,
-    price: product.price,
-    originalPrice: product.originalPrice,
-    discount: product.discount,
-    rating: 5,
-    reviews: product.reviews || '0',
-    description: product.description,
-    features: product.features || [],
-    image: product.images?.thumbnail || product.images?.gallery?.[0] || '/product-1.jpg',
-    best: product.best || '',
-    amazonUrl: product.amazonUrl || '#',
-    href: `/product/${product.slug}`,
-  }));
+      id: product.slug,
+      name: product.name,
+      subtitle: product.subtitle,
+      price: product.price,
+      originalPrice: product.originalPrice,
+      discount: product.discount,
+      rating: product.rating || 4.9,
+      reviews: product.reviews || '0',
+      description: product.description,
+      features: product.features || [],
+      image: product.images?.thumbnail || product.images?.gallery?.[0] || '/product-1.jpg',
+      best: product.best || '',
+      amazonUrl: product.amazonUrl || '#',
+      href: `/product/${product.slug}`,
+    }));
 
   const gridCols = products.length === 1 ? 'md:grid-cols-1 max-w-xl mx-auto'
     : products.length === 2 ? 'md:grid-cols-2'
       : 'md:grid-cols-2 lg:grid-cols-3';
+
+  const renderStars = () => {
+    return [...Array(5)].map((_, i: number) => (
+      <Star
+        key={i}
+        className="w-4 h-4 text-orange-400 fill-current"
+      />
+    ));
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
@@ -154,15 +163,8 @@ export default function HomePage() {
                       </div>
 
                       <div className="flex items-center gap-2 mb-4">
-                        <div className="flex">
-                          {[...Array(5)].map((_, i: number) => (
-                            <Star
-                              key={i}
-                              className={`w-4 h-4 ${i < 5 ? 'text-orange-400 fill-current' : 'text-gray-300 fill-current'}`}
-                            />
-                          ))}
-                        </div>
-                        <span className="text-sm font-bold text-gray-900">{product.rating.toFixed(1)}</span>
+                        <div className="flex">{renderStars()}</div>
+                        <span className="text-sm font-bold text-gray-900">{product.rating}</span>
                         <span className="text-sm text-gray-500">
                           {t(`(${product.reviews} 件のレビュー)`, `(${product.reviews} reviews)`, `(${product.reviews} 条评价)`)}
                         </span>
